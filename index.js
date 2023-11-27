@@ -1,7 +1,26 @@
 const ComputerChoiceDisplay = document.getElementById("Computer");
 const UserChoiceDisplay = document.getElementById("User");
-const buttons = document.querySelectorAll("button")
+const buttonsChoice = document.querySelectorAll("button");
+const resultDisplay = document.getElementById("Result")
 
-buttons.addEventListener()
+let UserChoice;
+let result;
+let computerchoice;
+buttonsChoice.forEach(buttonChoice => buttonChoice.addEventListener("click",(e)=>{
+    UserChoice = e.target.id ;
+    UserChoiceDisplay.innerHTML = UserChoice;
+    result.innerHTML = showResult();
+}
+))
 
-console.log(buttons);
+function showResult () {
+
+
+}
+
+function ComputerChoiceMethod(){
+
+
+}
+
+console.log(buttonsChoice);
